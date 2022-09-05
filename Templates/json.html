@@ -1,0 +1,186 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <style>
+        #map {
+            width: 100%;
+            height: 800px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+<div class="header">
+    <div class="container">
+        <ul class="ul-menu">
+            <li class="li-menu">
+                <a class="a-logo" href="/home">
+                    <img src="../static/images/Logo.png" alt="logo">
+                </a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/home">Trang chủ</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/gioi-thieu">Giới thiệu</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/khach-san">Khách sạn</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/tin-tuc">Tin Tức</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/tuyen-dung">Tuyển dụng</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu active" href="/ban-do">Bản đồ</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--<h2>{{data}}</h2>-->
+<input type="hidden" id="geo" value="{{data}}">
+<div id="map"></div>
+<div class="footer">
+    <div class="container">
+        <div class="col-md-4 col-footer address">
+            <h3>
+                <span>
+                    THÔNG TIN LIÊN HỆ
+                </span>
+            </h3>
+            <div>
+                <p class="title-footer">WEB HOTEL</p>
+                <ul>
+                    <li>Số điện thoại: 0888708872</li>
+                    <li>Website: http://127.0.0.1:5000/home</li>
+                    <li>Email: humg@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 col-footer service-footer">
+            <h3>
+                <span>
+                    DỊCH VỤ
+                </span>
+            </h3>
+            <div>
+
+                <ul>
+                    <li>GYM</li>
+                    <li>VISA</li>
+                    <li>PHÒNG HỌP</li>
+                    <li>NHÀ HÀNG</li>
+                    <li>THUÊ XE</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 col-footer service-footer">
+            <h3>
+                <span>
+                    KẾT NỐI VỚI CHÚNG TÔI
+                </span>
+            </h3>
+            <div>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous"
+                        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="U8nwggxK"></script>
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width=""
+                     data-height="200" data-small-header="true" data-adapt-container-width="true"
+                     data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var data = JSON.parse(document.getElementById("geo").value);
+    // var data = document.getElementById("geo").value
+    console.log(data)
+
+    var a = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+
+    var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+
+    var streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+    var b = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            id: 'mapbox/light-v9',
+            tileSize: 512,
+            zoomOffset: -1,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+        }),
+        c = L.tileLayer(a);
+        // d = L.tileLayer(a_2);
+
+
+    // var cities = L.tileLayer();
+
+    // L.marker([21.0293208, 105.8290055]).bindPopup('This is Littleton, CO.').addTo(cities),
+
+    var littleton = L.marker([21.0293208, 105.8290055]).bindPopup('abc');
+
+    var cities = L.layerGroup([littleton]);
+
+
+
+    var map = new L.Map('map', {
+        zoom: 13,
+        center: new L.latLng([21.0228161, 105.801944]),
+        layers: [b, cities]
+    });
+
+    map.addLayer(new L.TileLayer(a));
+    var markersLayer = new L.LayerGroup();
+    map.addLayer(markersLayer);
+    var baseLayers = {
+        "Lớp 1": b,
+        "Lớp 2": c,
+        "Đường": streets,
+        // "Test": d
+    };
+
+    var overlayMaps = {
+        "Cities": cities
+    };
+
+    L.control.layers(baseLayers,overlayMaps).addTo(map);
+    L.geoJSON(data, {
+        onEachFeature: function onEachFeature(feature, layer) {
+            // does this feature have a property named popupContent?
+            //if (feature.properties && feature.properties.popupContent) {
+            layer.bindPopup(feature.name);
+            //}
+        }
+    }).addTo(map);
+</script>
+</body>
+
+</html>

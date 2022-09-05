@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/hotel.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+    <script src="../static/js/menu.js"></script>
+    <!--    <link rel="stylesheet" href="css/home.css">-->
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+
+
+
+
+
+</head>
+<body>
+<div class="menu">
+    <div id="mySidebar" class="sidebar">
+        <button class="openbtn openbtn_header" id="openbtn" style="background: #ffffff" onclick="openNav()">&#9776;</button>
+        <a href="javascript:void(0)" id="a_closebtn_header" class="closebtn closebtn_header" onclick="closeNav()">&times;</a>
+        <div id="cssmenu" class="row-item">
+            <a class="" href="/" title="Trang chủ">
+                <img class="icon" src="../static/images/home_1.png" alt="Trang chủ">
+                <img class="icon_hover" src="../static/images/home_2.png" alt="Trang chủ">
+                <span class="span_name_menu" style="display: none" id="span_name_menu_1">Trang chủ</span>
+            </a>
+            <a href="/hotel" class="" title="Khách sạn">
+                <img class="icon" src="../static/images/ks1.png" alt="Nhân viên">
+                <img class="icon_hover" src="../static/images/ks2.png" alt="Nhân viên">
+                <span class="span_name_menu" style="display: none" id="span_name_menu_2">Khách sạn</span>
+            </a>
+            <a href="/donhang" class="" title="Đơn hàng">
+                <img class="icon" src="../static/images/dh1.png" alt="Đơn hàng">
+                <img class="icon_hover" src="../static/images/dh2.png" alt="Đơn hàng">
+                <span class="span_name_menu" style="display: none" id="span_name_menu_3">Đơn hàng</span>
+            </a>
+            <a href="/recruitment" class="" title="Tuyển dụng">
+                <img class="icon" src="../static/images/td1.png" alt="Tuyển dụng">
+                <img class="icon_hover" src="../static/images/td2.png" alt="Tuyển dụng">
+                <span class="span_name_menu" style="display: none" id="span_name_menu_4">Tuyển dụng</span>
+            </a>
+            <a href="/news" class="" title="Tin tức">
+                <img class="icon" src="../static/images/tt1.png" alt="Tin tức">
+                <img class="icon_hover" src="../static/images/tt2.png" alt="Tin tức">
+                <span class="span_name_menu" style="display: none" id="span_name_menu_5">Tin tức</span>
+            </a>
+            <a href="/home" class="" title="Trang web">
+                <img class="icon" src="../static/images/web1.png" alt="Trang web">
+                <img class="icon_hover" src="../static/images/web2.png" alt="Trang web">
+                <span class="span_name_menu"  style="display: none" id="span_name_menu_6">Trang web</span>
+            </a>
+
+            <a class="active" href="/user" title="Tài khoản">
+                <img class="icon" src="../static/images/user1.png" alt="Tài khoản">
+                <img class="icon_hover" src="../static/images/user2.png" alt="Tài khoản">
+                <span class="span_name_menu" style="display: none" id="span_name_menu_7">Tài khoản</span>
+            </a>
+        </div>
+    </div>
+    <div class="content-all">
+        <div class="header">
+            <div class="lo-go">
+                <a href="/">
+                    <img src="../static/images/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="text-header">
+                <p class="text-header-top">Phần mềm quản lý Khách sạn</p>
+                <p class="text-header-top">CÔNG TY TRUYỀN THÔNG & ĐÀO TẠO </p>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="bg">
+            <div class="container">
+                <div class="top-staff">
+                    <h1>Tài khoản</h1>
+                    <div class="top-btn-staff">
+<!--                        <a href="/insert_user" class="add">-->
+<!--                            <img src="../static/images/add.png" alt="add">-->
+<!--                            <p class="a-add a-btn">Thêm mới</p>-->
+<!--                        </a>-->
+                        <!--                    <div class="published" id="published">-->
+                        <!--                        <a class="a-published a-btn" href="javascript: void(0)">-->
+                        <!--                            <img src="../static/images/pls.png" alt="pls">-->
+                        <!--                            <span class="span-text">Kích hoạt</span>-->
+                        <!--                        </a>-->
+                        <!--                    </div>-->
+                        <!--                    <div class="not-published" >-->
+                        <!--                        <a class="a-not-published a-btn" href="javascript: void(0)" id="not_published">-->
+                        <!--                            <img src="../static/images/notpls.png" alt="notpls">-->
+                        <!--                            <span class="span-text">Ngừng kích hoạt</span>-->
+                        <!--                        </a>-->
+                        <!--                    </div>-->
+
+                        <div class="detele">
+                            <a class="a-detele a-btn" id="detele" href="javascript: void(0)">
+                                <img src="../static/images/detele.png" alt="detele">
+                                <span class="span-text">Xóa</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row content-hotel">
+
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Mã</th>
+                            <th>Tên đăng nhâp</th>
+                            <th>Email</th>
+                            <th>Số điện thoại</th>
+                            <th>Kích hoạt</th>
+                            <th>Xóa</th>
+<!--                            <th>Sửa</th>-->
+                        </tr>
+                        {%for i in r%}
+                        <tr>
+
+                            <!--                            {%for x in i%}-->
+                            <!--                            <td>{{x}}</td>-->
+
+                            <!--                            {%endfor%}-->
+                            <td>{{i[3]}}</td>
+                            <td>{{i[0]}}
+                            <td>{{i[1]}}</td>
+                            <td>0{{i[4]}}</td>
+                            {% if i[5]==1 %}
+                            <td><a href="/unpls_order/{{i[3]}}"><img class="img_pls" src="../static/images/published.png" alt="published"></a></td>
+                            {% else %}
+                            <td><a href="/pls_order/{{i[3]}}"><img class="img_pls" src="../static/images/unpublished.png" alt="unpublished"></a></td>
+                            {% endif %}
+                            <!--                            <td>{{i[9]}}</td>-->
+                            <td><a class="btn btn-danger" href="/delete_order/{{i[3]}}">Xóa</a></td>
+<!--                            <td><a class="btn btn-warning" href="/update_news/{{i[0]}}">Sửa</a></td>-->
+                        </tr>
+                        {%endfor%}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

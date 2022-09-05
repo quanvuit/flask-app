@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/chitiettintuc.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <ul class="ul-menu">
+            <li class="li-menu">
+                <a class="a-logo" href="/home">
+                    <img src="../static/images/Logo.png" alt="logo">
+                </a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/home">Trang chủ</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/gioi-thieu">Giới thiệu</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/khach-san">Khách sạn</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/tin-tuc">Tin Tức</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu active" href="/tuyen-dung">Tuyển dụng</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/ban-do">Bản đồ</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="content_hotel">
+    <div class="bg">
+        <h2>Tuyển dụng</h2>
+    </div>
+    <div class="news_detail">
+        <div class="container">
+            <h1>{{r[4]}} ({{r[6]}})</h1>
+            <p class="date"><img src="../static/images/time.png" alt="time">{{r[1]}}</p>
+            <div class="nd">
+                {{r[3]}}
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="col-md-4 col-footer address">
+            <h3>
+                <span>
+                    THÔNG TIN LIÊN HỆ
+                </span>
+            </h3>
+            <div>
+                <p class="title-footer">WEB HOTEL</p>
+                <ul>
+                    <li>Số điện thoại: 0888708872</li>
+                    <li>Website: http://127.0.0.1:5000/home</li>
+                    <li>Email: humg@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 col-footer service-footer">
+            <h3>
+                <span>
+                    DỊCH VỤ
+                </span>
+            </h3>
+            <div>
+
+                <ul>
+                    <li>GYM</li>
+                    <li>VISA</li>
+                    <li>PHÒNG HỌP</li>
+                    <li>NHÀ HÀNG</li>
+                    <li>THUÊ XE</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 col-footer service-footer">
+            <h3>
+                <span>
+                    KẾT NỐI VỚI CHÚNG TÔI
+                </span>
+            </h3>
+            <div>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous"
+                        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="U8nwggxK"></script>
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width=""
+                     data-height="200" data-small-header="true" data-adapt-container-width="true"
+                     data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

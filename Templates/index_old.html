@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+
+                <a class="btn btn-primary" href="/insert">Thêm mới sinh viên</a>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Mã sinh viên</th>
+                        <th>Họ Tên</th>
+                        <th>Email</th>
+                        <th>Địa Chỉ</th>
+                        <th>Hành Động</th>
+                    </tr>
+                    {%for i in r%}
+                        <tr>
+                            {%for x in i%}
+                                <td>{{x}}</td>
+
+                            {%endfor%}
+                            <td><a class="btn btn-danger" href="/delete/{{i[0]}}">Xóa</a></td>
+                            <td><a class="btn btn-warning" href="/update/{{i[0]}}">Sửa</a></td>
+                        </tr>
+                    {%endfor%}
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

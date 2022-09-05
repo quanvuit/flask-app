@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/home_web.css">
+    <script src="../static/js/home.js"></script>
+
+
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <ul class="ul-menu">
+            <li class="li-menu">
+                <a class="a-logo" href="/home">
+                    <img src="../static/images/Logo.png" alt="logo">
+                </a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu active" href="/home">Trang chủ</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/gioi-thieu">Giới thiệu</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/khach-san">Khách sạn</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/tin-tuc">Tin Tức</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/tuyen-dung">Tuyển dụng</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="/ban-do">Bản đồ</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../static/images/bn1.jpg" alt="img">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/images/bn2.jpg" alt="img">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/images/bn3.jpg" alt="img">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="left-about col-md-6">
+                    <img src="../static/images/ab.webp" alt="">
+                </div>
+                <div class="right-about col-md-6">
+                    <p><strong>Web hotel</strong><br>Là một hệ thống tất cả các khách sạn Hà Nội.Với phương châm “Sự
+                        hài lòng của quý khách là thành công của chúng tôi”, Web hotel đã và đang nhận được
+                        rất nhiều sự quan tâm của quý khách hàng, bao gồm: các công ty, đoàn thể và rất
+                        nhiều du khách nước ngoài đến thăm quan tại Hà Nội làm địa điểm dừng chân.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hotel">
+        <div class="container">
+            <h2>Khách sạn nổi bật</h2>
+            <p class="p-hotel">Một số khách sạn nổi bật của Web Hotel</p>
+            <div class="row">
+                {%for i in r%}
+                <div class="col-md-4 item-hotel">
+                    <a class="a-img" href="/chitietkhachsan/{{i[0]}}">
+                        <img src="{{i[7]}}" alt="">
+                    </a>
+                    <a class="a-title" href="/chitietkhachsan/{{i[0]}}">{{i[1]}}</a>
+                    <div class="info-hotel">
+                        <p class="p-address">{{i[5]}}</p>
+                        <p class="p-phone">Điện thoại: <strong>{{i[2]}}</strong></p>
+                        <a class="more-hotel" href="/chitietkhachsan/{{i[0]}}">Xem chi tiết</a>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="container">
+            <h2>Dịch vụ - Tiện nghi</h2>
+            <p class="p-service">Dịch vụ nhà hàng, karaoke, coffee, phòng họp,... tại Web Hotel</p>
+            <div class="content_service">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                           role="tab" aria-controls="nav-home" aria-selected="true">Phòng tập Gym</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                           role="tab" aria-controls="nav-profile" aria-selected="false">Visas</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                           role="tab" aria-controls="nav-contact" aria-selected="false">Dịch Vụ Phòng họp</a>
+                        <a class="nav-item nav-link" id="nav-contact-xe" data-toggle="tab" href="#nav-xe" role="tab"
+                           aria-controls="nav-contact" aria-selected="false">Thuê xe</a>
+                        <a class="nav-item nav-link" id="nav-contact-nh" data-toggle="tab" href="#nav-nh" role="tab"
+                           aria-controls="nav-contact" aria-selected="false">Nhà hàng</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="bao_service">
+                            <div class="img-service">
+                                <img src="../static/images/home/gym.jpg" alt="">
+                            </div>
+                            <div class="text-service">
+                                <p class="title">Phòng tập Gym</p>
+                                <p class="summary-service">Phòng tập gym với đầy đủ trang thiết bị hiện đại ..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="bao_service">
+                            <div class="img-service">
+                                <img src="../static/images/home/visa.jpg" alt="">
+                            </div>
+                            <div class="text-service">
+                                <p class="title">Visas</p>
+                                <p class="summary-service">`` Visa khi đến là gì?: Đây rất có thể là cách dễ nhất để bạn
+                                    có
+                                    được thị thực mà không cần phải đuổi theo các đại sứ quán, lãnh sự quán và những nơi
+                                    tương tự trước chuyến đi của bạn ..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="bao_service">
+                            <div class="img-service">
+                                <img src="../static/images/home/hop.jpg" alt="">
+                            </div>
+                            <div class="text-service">
+                                <p class="title">Dịch Vụ Phòng họp</p>
+                                <p class="summary-service">Phòng họp được trang bị internet tốc độ cao, máy chiếu, màn
+                                    hình
+                                    LCD, bảng, bảng lật, bút, giấy và nước tinh khiết, ...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-xe" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="bao_service">
+                            <div class="img-service">
+                                <img src="../static/images/home/xe.jpg" alt="">
+                            </div>
+                            <div class="text-service">
+                                <p class="title">Thuê xe</p>
+                                <p class="summary-service">- Dịch vụ thuê xe oto và xe máy đi theo ngày</p>
+                                <p class="summary-service">- Dịch vụ thuê xe đón Nội Bài về khách sạn và từ khách sạn đi
+                                    Nội
+                                    Bài</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-nh" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="bao_service">
+                            <div class="img-service">
+                                <img src="../static/images/home/nh.jpg" alt="">
+                            </div>
+                            <div class="text-service">
+                                <p class="title">Nhà hàng</p>
+                                <p class="summary-service">Nhà hàng của chúng tôi phục vụ nhiều món ăn trong một khung
+                                    cảnh
+                                    trang nhã, sang trọng. Với sự trang trí đẳng cấp của các món ăn kết hợp Á - Âu. Đội
+                                    ngũ
+                                    quản lý và nhân viên chuyên nghiệp, sẵn sàng phục vụ quý khách.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <h2>Một số tin tức nổi bật của Web Hotel</h2>
+
+            <div class="content_news">
+                {%for n in list_news%}
+                <div class="col-md-6 item-news">
+                    <div class="img-news">
+                        <a href="/chitiettintuc/{{n[5]}}"><img src="{{n[3]}}" alt="/chitiettintuc/{{n[0]}}"></a>
+                    </div>
+                    <div class="info-news">
+                        <a class="title" href="/chitiettintuc/{{n[5]}}">{{n[0]}}</a>
+                        <p class="tomtat">{{n[4]}}</p>
+                        <a class="more_news" href="/chitiettintuc/{{n[5]}}">Xem thêm</a>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="col-md-4 col-footer address">
+            <h3>
+                <span>
+                    THÔNG TIN LIÊN HỆ
+                </span>
+            </h3>
+            <div>
+                <p class="title-footer">WEB HOTEL</p>
+                <ul>
+                    <li>Số điện thoại: 0888708872</li>
+                    <li>Website: http://127.0.0.1:5000/home</li>
+                    <li>Email: humg@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 col-footer service-footer">
+            <h3>
+                <span>
+                    DỊCH VỤ
+                </span>
+            </h3>
+            <div>
+
+                <ul>
+                    <li>GYM</li>
+                    <li>VISA</li>
+                    <li>PHÒNG HỌP</li>
+                    <li>NHÀ HÀNG</li>
+                    <li>THUÊ XE</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 col-footer service-footer">
+            <h3>
+                <span>
+                    KẾT NỐI VỚI CHÚNG TÔI
+                </span>
+            </h3>
+            <div>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous"
+                        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="U8nwggxK"></script>
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width=""
+                     data-height="200" data-small-header="true" data-adapt-container-width="true"
+                     data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

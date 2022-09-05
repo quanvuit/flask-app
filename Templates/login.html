@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row content">
+                <h1>TRANG ĐĂNG NHẬP</h1>
+                <form action="/login_dn" method="POST">
+                    <div class="form-control_login">
+                        <p>Nhập vào tên đăng nhập:</p>
+                        <input class="form-control" type="text" name="us" id="us" required="required">
+                    </div>
+                    <div class="form-control_login">
+                        <p>Nhập vào mật khẩu:</p>
+                        <input class="form-control" type="password" name="pa" id="pa" required="required">
+                    </div>
+                    <input class="btn btn-primary" onclick="login()" type="submit" name="login" value="Đăng Nhập">
+                    <a href="/register" class="btn btn-danger">Đăng ký</a>
+                
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    function login() {
+       us = $("#us").val();
+       if(us==''){
+           alert('Bạn chưa nhập tên đăng nhập')
+           return false;
+       }
+        pa = $("#pa").val();
+       if(pa==''){
+           alert('Bạn chưa nhập mật khẩu')
+           return false;
+       }
+       return true;
+    }
+</script>
+<style>
+    body {
+        background: #f8f8f8; }
+      
+      .content {
+        width: 400px;
+        margin: auto; }
+        .content h1 {
+          text-align: center;
+          color: #f00;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-size: 30px; }
+        .content form {
+          border-color: #ddd; }
+          .content form .form-control_login {
+            margin-bottom: 15px; }
+            .content form .form-control_login p {
+              margin-bottom: 5px; }
+            .content form .form-control_login input {
+              margin-top: 5px;
+              height: 35px;
+              padding-left: 20px;
+              border-radius: 5px; }
+              .content form .form-control_login input:focus {
+                outline: unset;
+                box-shadow: unset; }
+      
+      /*# sourceMappingURL=login.css.map */
+</style>
+<!--  -->
