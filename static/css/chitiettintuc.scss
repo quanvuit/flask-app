@@ -1,0 +1,93 @@
+.content_hotel{
+  padding-bottom: 30px;
+  .bg{
+    height: 200px;
+    background: #c94d66 url('../images/group.png')no-repeat center top 25px;
+    position: relative;
+    margin-bottom: 90px;
+    h2{
+      margin-bottom: 0px;
+      margin-top: 0px;
+      bottom: -60px;
+      width: 100%;
+      position: absolute;
+      font-weight: normal;
+      font-size: 130px;
+      text-align: center;
+      color: #e9bf82;
+      text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      animation: chay_h1 3s forwards;
+      @-webkit-keyframes chay_h1 {
+        from {
+          opacity: 0;
+          bottom: -160px;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .news_detail{
+    .date{
+      img{
+        margin-right: 10px;
+      }
+    }
+    .nd{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .news{
+    margin-bottom: 30px;
+    h2{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .p-news{
+      text-align: center;
+    }
+    .content_news{
+      margin-top: 30px;
+      .item-news{
+        display: flex;
+        margin-bottom: 20px;
+        .img-news{
+          width: 40%;
+          img{
+            max-width: 100%;
+          }
+        }
+        .info-news{
+          padding-left: 20px;
+          //padding-right: 20px;
+          width: 60%;
+          .title{
+            font-weight: bold;
+            font-size: 16px;
+            color: #333333;
+            &:hover{
+              color: #d69c2f;
+            }
+          }
+          .tomtat{
+            margin-top: 5px;
+            margin-bottom: 10px;
+          }
+          .more_news{
+            color: #333333;
+            border: 1px solid #ddd;
+            padding: 5px 12px;
+            &:hover{
+              background: #d69c2f;
+              color: #ffffff;
+              border: 1px solid #d69c2f;
+            }
+          }
+        }
+      }
+    }
+  }
+}

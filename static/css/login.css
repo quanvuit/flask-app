@@ -1,0 +1,28 @@
+body {
+  background: #f8f8f8; }
+
+.content {
+  width: 400px;
+  margin: auto; }
+  .content h1 {
+    text-align: center;
+    color: #f00;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px; }
+  .content form {
+    border-color: #ddd; }
+    .content form .form-control_login {
+      margin-bottom: 15px; }
+      .content form .form-control_login p {
+        margin-bottom: 5px; }
+      .content form .form-control_login input {
+        margin-top: 5px;
+        height: 35px;
+        padding-left: 20px;
+        border-radius: 5px; }
+        .content form .form-control_login input:focus {
+          outline: unset;
+          box-shadow: unset; }
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,79 @@
+.content_hotel .bg {
+  height: 200px;
+  background: #c94d66 url("../images/group.png") no-repeat center top 25px;
+  position: relative;
+  margin-bottom: 150px; }
+  .content_hotel .bg h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    bottom: -28px;
+    width: 100%;
+    position: absolute;
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+    color: #e9bf82;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    animation: chay_h1 3s forwards; }
+@-webkit-keyframes chay_h1 {
+  from {
+    opacity: 0;
+    bottom: -80px; }
+  to {
+    opacity: 1; } }
+.content_hotel .content_img .left img {
+  max-width: 100%;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px; }
+.content_hotel .content_img .right ul {
+  padding-left: 10px;
+  list-style: none; }
+  .content_hotel .content_img .right ul li {
+    margin-bottom: 5px; }
+  .content_hotel .content_img .right ul .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e9bf82; }
+.content_hotel .content_img .right .btn-modal:focus {
+  border: 0px;
+  box-shadow: unset;
+  outline: unset;
+  outline-offset: unset; }
+.content_hotel .content_img .nd {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.modal .modal-dialog .modal-content .modal-header {
+  position: relative; }
+  .modal .modal-dialog .modal-content .modal-header .modal-title {
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+    color: #e9bf82;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  .modal .modal-dialog .modal-content .modal-header .close {
+    position: absolute;
+    top: 0px;
+    right: 10px; }
+.modal .modal-dialog .modal-content .modal-body .form .form-controls {
+  margin-bottom: 15px; }
+  .modal .modal-dialog .modal-content .modal-body .form .form-controls .input input {
+    padding-left: 15px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ddd; }
+    .modal .modal-dialog .modal-content .modal-body .form .form-controls .input input:focus {
+      outline: unset; }
+  .modal .modal-dialog .modal-content .modal-body .form .form-controls .input textarea {
+    padding-left: 15px;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #ddd; }
+    .modal .modal-dialog .modal-content .modal-body .form .form-controls .input textarea:focus {
+      outline: unset; }
+
+/*# sourceMappingURL=chitietkhachsan.css.map */

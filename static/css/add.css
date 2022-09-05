@@ -1,0 +1,254 @@
+.top-staff {
+  margin-top: 20px;
+  position: relative;
+  display: flex; }
+  .top-staff h2 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    color: #333;
+    width: 30%; }
+  .top-staff .top-btn-staff {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex; }
+    .top-staff .top-btn-staff .add {
+      padding: 8px 8px 0px 8px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.16);
+      width: 80px;
+      height: 50px;
+      border: 1px solid #ccc;
+      margin-right: 10px; }
+      .top-staff .top-btn-staff .add img {
+        margin: 0px auto 2px;
+        display: block; }
+      .top-staff .top-btn-staff .add .a-add {
+        font-weight: normal;
+        font-size: 12px;
+        text-align: left;
+        color: #333; }
+      .top-staff .top-btn-staff .add:hover {
+        border: 1px solid #0232a0; }
+        .top-staff .top-btn-staff .add:hover .a-add {
+          color: #0232A0; }
+    .top-staff .top-btn-staff .published .a-btn {
+      display: block;
+      padding: 8px 8px 0px 8px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.16);
+      height: 50px;
+      border: 1px solid #ccc;
+      margin-right: 10px; }
+      .top-staff .top-btn-staff .published .a-btn img {
+        margin: 0px auto 2px;
+        display: block; }
+      .top-staff .top-btn-staff .published .a-btn .span-text {
+        font-weight: normal;
+        font-size: 12px;
+        text-align: left;
+        color: #333; }
+      .top-staff .top-btn-staff .published .a-btn:hover {
+        border: 1px solid #0232a0; }
+        .top-staff .top-btn-staff .published .a-btn:hover .span-text {
+          color: #0232A0; }
+    .top-staff .top-btn-staff .not-published .a-btn {
+      display: block;
+      padding: 8px 13px 0px 13px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.16);
+      height: 50px;
+      border: 1px solid #ccc;
+      margin-right: 10px; }
+      .top-staff .top-btn-staff .not-published .a-btn img {
+        margin: 0px auto 2px;
+        display: block; }
+      .top-staff .top-btn-staff .not-published .a-btn .span-text {
+        font-weight: normal;
+        font-size: 12px;
+        text-align: left;
+        color: #333; }
+      .top-staff .top-btn-staff .not-published .a-btn:hover {
+        border: 1px solid #0232a0; }
+        .top-staff .top-btn-staff .not-published .a-btn:hover .span-text {
+          color: #0232A0; }
+    .top-staff .top-btn-staff .excel .a-btn {
+      text-align: center;
+      display: block;
+      padding: 8px 13px 0px 13px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.16);
+      height: 50px;
+      border: 1px solid #ccc;
+      margin-right: 10px; }
+      .top-staff .top-btn-staff .excel .a-btn img {
+        margin: 0px auto 2px;
+        display: block; }
+      .top-staff .top-btn-staff .excel .a-btn .span-text {
+        font-weight: normal;
+        font-size: 12px;
+        text-align: left;
+        color: #333; }
+      .top-staff .top-btn-staff .excel .a-btn:hover {
+        border: 1px solid #0232a0; }
+        .top-staff .top-btn-staff .excel .a-btn:hover .span-text {
+          color: #0232A0; }
+    .top-staff .top-btn-staff .detele .a-btn {
+      text-align: center;
+      display: block;
+      padding: 8px 13px 0px 13px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.16);
+      height: 50px;
+      border: 1px solid #ccc; }
+      .top-staff .top-btn-staff .detele .a-btn img {
+        margin: 0px auto 2px;
+        display: block; }
+      .top-staff .top-btn-staff .detele .a-btn .span-text {
+        font-weight: normal;
+        font-size: 12px;
+        text-align: left;
+        color: #333; }
+      .top-staff .top-btn-staff .detele .a-btn:hover {
+        border: 1px solid #0232a0; }
+        .top-staff .top-btn-staff .detele .a-btn:hover .span-text {
+          color: #0232A0; }
+
+.content-staff {
+  margin-top: 20px;
+  border-radius: 5px;
+  border-top: 2px solid #0232A0;
+  background: #fff;
+  padding-top: 35px;
+  padding-left: 20px; }
+  .content-staff h1 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    color: #333; }
+    .content-staff h1 img {
+      margin-right: 10px; }
+  .content-staff .form {
+    margin-top: 25px;
+    padding-bottom: 65px; }
+    .content-staff .form .form-controls {
+      margin-left: 100px;
+      display: flex;
+      margin-bottom: 10px; }
+      .content-staff .form .form-controls .name-input {
+        width: 190px;
+        text-align: right;
+        margin-right: 25px;
+        margin-bottom: 0px;
+        padding-top: 10px; }
+      .content-staff .form .form-controls .label_error {
+        margin-bottom: 0px; }
+      .content-staff .form .form-controls .input input {
+        padding-left: 10px;
+        display: block;
+        width: 380px;
+        height: 40px;
+        border-radius: 3px;
+        background: #fff;
+        border: 1px solid #c0c2c9; }
+        .content-staff .form .form-controls .input input:focus {
+          outline: unset; }
+      .content-staff .form .form-controls .input textarea {
+        padding-left: 10px;
+        border-radius: 3px;
+        width: 590px;
+        height: 80px;
+        border: 1px solid #c0c2c9; }
+        .content-staff .form .form-controls .input textarea :focus {
+          border: 1px solid #c0c2c9;
+          outline: unset !important; }
+      .content-staff .form .form-controls .input img {
+        width: 70px;
+        max-width: 100%; }
+      .content-staff .form .form-controls .input .btn-lg {
+        margin-top: 10px;
+        padding: 0px 15px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.16);
+        border: 1px solid #ccc;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: left;
+        color: #333;
+        border-radius: 3px; }
+        .content-staff .form .form-controls .input .btn-lg:hover {
+          border-radius: 3px;
+          border: 1px solid #0232a0;
+          color: #0232a0; }
+        .content-staff .form .form-controls .input .btn-lg:focus {
+          outline: unset;
+          border: 1px solid #0232a0; }
+        .content-staff .form .form-controls .input .btn-lg:after {
+          border: 1px solid #0232a0;
+          outline: unset; }
+      .content-staff .form .form-controls .input select {
+        padding-left: 10px;
+        display: block;
+        width: 380px;
+        height: 40px;
+        border-radius: 3px;
+        background: #fff;
+        border: 1px solid #c0c2c9; }
+        .content-staff .form .form-controls .input select:focus {
+          outline: unset; }
+      .content-staff .form .form-controls .input br {
+        display: none; }
+      .content-staff .form .form-controls .input .add_btn {
+        color: #333333;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.16);
+        border: 1px solid #ccc;
+        width: 160px; }
+        .content-staff .form .form-controls .input .add_btn:hover {
+          border: 1px solid #0232a0;
+          color: #0232a0; }
+      .content-staff .form .form-controls .birthday select {
+        display: inline-block;
+        padding-left: 10px;
+        margin-right: 10px;
+        width: 117.5px;
+        height: 40px;
+        border-radius: 3px;
+        background: #fff;
+        border: 1px solid #c0c2c9; }
+        .content-staff .form .form-controls .birthday select:focus {
+          outline: unset; }
+      .content-staff .form .form-controls .published label {
+        margin-bottom: 0px;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: left;
+        color: #333;
+        margin-right: 40px; }
+      .content-staff .form .form-controls .edit-pass label {
+        margin-bottom: 0px;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: left;
+        color: #333;
+        margin-right: 40px; }
+      .content-staff .form .form-controls .pass {
+        display: none; }
+        .content-staff .form .form-controls .pass label {
+          padding-left: 15px; }
+    .content-staff .form .form-controls-published {
+      margin-bottom: 20px;
+      margin-top: 20px; }
+      .content-staff .form .form-controls-published .name-input {
+        padding-top: 0px; }
+    .content-staff .form .form-controls-edit-pass {
+      margin-bottom: 20px;
+      margin-top: 20px; }
+      .content-staff .form .form-controls-edit-pass .name-input {
+        padding-top: 0px; }
+
+/*# sourceMappingURL=add.css.map */

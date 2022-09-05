@@ -1,0 +1,194 @@
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity; }
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+.carousel-fade .carousel-control {
+  z-index: 2; }
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%; }
+
+.item:nth-child(1) {
+  background: #74C390; }
+
+.item:nth-child(2) {
+  background: #51BCE8; }
+
+.item:nth-child(3) {
+  background: #E46653; }
+
+.content .about-us {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .content .about-us .left-about img {
+    max-width: 100%;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px; }
+  .content .about-us .right-about {
+    display: grid;
+    align-items: center; }
+    .content .about-us .right-about strong {
+      margin-top: 0px;
+      color: #A5772C;
+      font-size: 24px; }
+.content .hotel {
+  padding-bottom: 40px;
+  background: #EFEEE9; }
+  .content .hotel h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .content .hotel .p-hotel {
+    text-align: center; }
+  .content .hotel .item-hotel {
+    margin-top: 30px; }
+    .content .hotel .item-hotel .a-img img {
+      max-width: 100%;
+      border-top-left-radius: 30px; }
+    .content .hotel .item-hotel .a-title {
+      display: block;
+      background: #d69c2f;
+      font-size: 15px;
+      color: #ffffff;
+      padding: 10px 15px; }
+    .content .hotel .item-hotel .info-hotel {
+      border: 1px dotted #D0BC3F;
+      padding: 10px 15px;
+      border-bottom-right-radius: 30px;
+      padding-bottom: 20px; }
+      .content .hotel .item-hotel .info-hotel .p-address {
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1.5;
+        margin-bottom: 15px; }
+      .content .hotel .item-hotel .info-hotel .p-phone {
+        margin-bottom: 15px; }
+        .content .hotel .item-hotel .info-hotel .p-phone strong {
+          color: #A5772C; }
+      .content .hotel .item-hotel .info-hotel .more-hotel {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 15px;
+        background: #C4A83A;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px; }
+.content .service {
+  margin-bottom: 30px; }
+  .content .service h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .content .service .p-service {
+    text-align: center; }
+  .content .service .content_service {
+    margin-top: 25px;
+    display: flex;
+    background: #EFEEE9; }
+    .content .service .content_service nav {
+      width: 20%; }
+      .content .service .content_service nav .nav-tabs {
+        border-bottom: 0px; }
+        .content .service .content_service nav .nav-tabs a {
+          padding: 10px 20px;
+          text-align: right;
+          width: 100%;
+          display: block;
+          text-decoration: none;
+          color: #545454;
+          border-bottom: 0px;
+          border-top: 0px; }
+          .content .service .content_service nav .nav-tabs a:hover {
+            border-top: 0px;
+            border-bottom: 0px;
+            color: #fff;
+            background: #d69c2f; }
+        .content .service .content_service nav .nav-tabs .active {
+          border-top: 0px;
+          border-bottom: 0px;
+          color: #fff;
+          background: #d69c2f; }
+    .content .service .content_service .tab-content {
+      padding-top: 15px;
+      padding-left: 30px;
+      width: 80%; }
+      .content .service .content_service .tab-content .tab-pane .bao_service {
+        display: flex; }
+      .content .service .content_service .tab-content .tab-pane .img-service {
+        width: 30%; }
+        .content .service .content_service .tab-content .tab-pane .img-service img {
+          max-width: 100%; }
+      .content .service .content_service .tab-content .tab-pane .text-service {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 70%; }
+        .content .service .content_service .tab-content .tab-pane .text-service .title {
+          margin-bottom: 10px;
+          font-size: 18px;
+          font-weight: bold; }
+.content .news {
+  margin-bottom: 30px; }
+  .content .news h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .content .news .content_news {
+    margin-top: 30px; }
+    .content .news .content_news .item-news {
+      display: flex;
+      margin-bottom: 20px; }
+      .content .news .content_news .item-news .img-news {
+        width: 40%; }
+        .content .news .content_news .item-news .img-news img {
+          max-width: 100%; }
+      .content .news .content_news .item-news .info-news {
+        padding-left: 20px;
+        width: 60%; }
+        .content .news .content_news .item-news .info-news .title {
+          font-weight: bold;
+          font-size: 16px;
+          color: #333333;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          height: 39px; }
+          .content .news .content_news .item-news .info-news .title:hover {
+            color: #d69c2f; }
+        .content .news .content_news .item-news .info-news .tomtat {
+          margin-top: 5px;
+          margin-bottom: 10px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          height: 40px; }
+        .content .news .content_news .item-news .info-news .more_news {
+          border-top-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          color: #333333;
+          border: 1px solid #ddd;
+          padding: 5px 12px; }
+          .content .news .content_news .item-news .info-news .more_news:hover {
+            background: #d69c2f;
+            color: #ffffff;
+            border: 1px solid #d69c2f; }
+
+/*# sourceMappingURL=home_web.css.map */

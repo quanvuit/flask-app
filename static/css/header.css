@@ -1,0 +1,175 @@
+p {
+  margin-bottom: 0px;
+  border-bottom: 0px; }
+
+span {
+  border-bottom: 0px; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+body {
+  font-size: 14px; }
+
+.bg {
+  background: #F5F6FA; }
+
+.container {
+  width: auto;
+  margin-right: 30px;
+  margin-left: 30px; }
+
+.menu {
+  height: 100%;
+  border-right: 1px solid #F2F2F2;
+  display: flex; }
+  .menu .sidebar .row-item a {
+    display: flex;
+    padding: 14px 0px 14px 28px;
+    margin-top: 18px; }
+    .menu .sidebar .row-item a img {
+      width: 25px;
+      max-width: 100%;
+      display: block; }
+    .menu .sidebar .row-item a .icon_hover {
+      display: none; }
+    .menu .sidebar .row-item a .span_name_menu {
+      margin-left: 12px;
+      display: none;
+      font-weight: normal;
+      font-size: 16px;
+      text-align: left;
+      color: #333; }
+    .menu .sidebar .row-item a .span_name_menu-nav {
+      display: grid;
+      align-items: center; }
+    .menu .sidebar .row-item a:hover .icon {
+      display: none; }
+    .menu .sidebar .row-item a:hover .icon_hover {
+      display: block; }
+    .menu .sidebar .row-item a:hover .span_name_menu {
+      color: #0232A0; }
+  .menu .sidebar .row-item .active .icon {
+    display: none; }
+  .menu .sidebar .row-item .active .icon_hover {
+    display: block; }
+  .menu .sidebar .row-item .active .span_name_menu {
+    color: #0232A0; }
+  .menu .content-all {
+    width: 100%; }
+    .menu .content-all .header {
+      padding: 5.5px 0px;
+      border-bottom: 1px solid #F2F2F2;
+      position: relative;
+      display: flex; }
+      .menu .content-all .header a {
+        text-decoration: none; }
+      .menu .content-all .header .lo-go {
+        margin-right: 15px;
+        margin-left: 57px; }
+      .menu .content-all .header .text-header {
+        margin-top: 8px; }
+        .menu .content-all .header .text-header .text-header-top {
+          margin-top: 3px;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: left;
+          color: #333;
+          margin-bottom: 0px; }
+      .menu .content-all .header .user {
+        border-left: 1px solid #f2f2f2f2;
+        height: 100%;
+        right: 55px;
+        top: 0px;
+        position: absolute;
+        padding-top: 20px;
+        display: flex; }
+        .menu .content-all .header .user .div_user {
+          padding-left: 70px;
+          position: relative; }
+          .menu .content-all .header .user .div_user img {
+            display: block;
+            position: absolute;
+            left: 45px;
+            top: 10px; }
+
+.sidebar {
+  /*width: 80px;*/
+  border-right: 1px solid #F2F2F2;
+  padding-top: 0px;
+  height: 100%;
+  /* 100% Full-height */
+  width: 80px;
+  /* 0 width - change this with JavaScript */
+  position: relative;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  /*top: 0;*/
+  /*left: 0;*/
+  overflow-x: visible;
+  /* Disable horizontal scroll */
+  /*padding-top: 60px; !* Place content 60px from the top *!*/
+  /*transition: 0.5s; !* 0.5 second transition effect to slide in the sidebar *!*/ }
+
+.sidebar a {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1; }
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 18px;
+  padding: 0px 6px;
+  /*margin-left: 50px;*/
+  display: none;
+  color: #0232A0;
+  background: #ffffff;
+  border-radius: 50%;
+  font-weight: normal; }
+
+.openbtn {
+  font-size: 26px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  width: 100%;
+  height: 86px;
+  color: #C0C2C9;
+  background: unset;
+  border-bottom: 1px solid #F2F2F2;
+  /*border-right: 1px solid #F2F2F2;*/ }
+
+.openbtn:hover {
+  border: 0px; }
+
+.openbtn:focus {
+  outline: unset; }
+
+.openbtn:hover {
+  background-color: #0232A0 !important;
+  color: #ffffff; }
+
+.openbtn-header-nav {
+  text-align: left;
+  background-color: #0232A0;
+  color: #ffffff;
+  padding: 10px 15px 10px 28px; }
+
+#main {
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+  /*padding: 20px;*/ }
+
+/*# sourceMappingURL=header.css.map */
